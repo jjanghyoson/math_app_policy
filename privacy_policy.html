@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>개인정보처리방침 — MathQuest</title>
+  <style>
+    :root {
+      --bg: #f3f5f1; --card: #ffffff; --ink: #1a1a2e; --ink-soft: #3f4454; --muted: #6b7080;
+      --line: #e3e6df; --accent: #0f8b7d; --accent-soft: #e3f4f1; --chip: #f6f7f4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12131c; --card: #1c1e2b; --ink: #f1f2f6; --ink-soft: #c9ccd6; --muted: #9a9fb0;
+        --line: #2c2f40; --accent: #4fd1bf; --accent-soft: #173a37; --chip: #24273a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; padding: 24px 16px 56px; background: var(--bg); color: var(--ink-soft);
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", Roboto, sans-serif;
+      font-size: 16px; line-height: 1.75; word-break: keep-all; overflow-wrap: break-word;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    .brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; color: var(--accent); text-decoration: none; font-size: 15px; }
+    .brand span { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 9px; background: var(--accent); color: #fff; font-size: 15px; }
+    header.doc { margin: 18px 0 20px; }
+    h1 { margin: 0 0 6px; font-size: 28px; line-height: 1.3; color: var(--ink); letter-spacing: -0.02em; }
+    .dates { margin: 0; font-size: 14px; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px 22px; margin-top: 14px; }
+    .intro p { margin: 0 0 12px; }
+    .intro p:last-child { margin-bottom: 0; }
+    .callout { background: var(--accent-soft); border-left: 4px solid var(--accent); border-radius: 10px; padding: 14px 16px; color: var(--ink); }
+    nav.toc h2 { margin: 0 0 8px; font-size: 15px; color: var(--muted); }
+    nav.toc ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+    nav.toc a { display: block; padding: 3px 10px; border-radius: 8px; color: var(--ink); text-decoration: none; font-size: 15px; line-height: 1.6; }
+    nav.toc a:hover { background: var(--chip); }
+    section h2 { margin: 0 0 10px; font-size: 20px; line-height: 1.4; color: var(--ink); scroll-margin-top: 16px; }
+    section p { margin: 10px 0; }
+    section > :last-child { margin-bottom: 0; }
+    strong { color: var(--ink); font-weight: 700; }
+    ul { margin: 10px 0; padding-left: 20px; }
+    li { margin: 6px 0; }
+    li::marker { color: var(--accent); }
+    ul.links { list-style: none; padding: 0; display: grid; gap: 8px; }
+    ul.links a { display: block; padding: 10px 14px; border-radius: 10px; background: var(--chip); }
+    .table-scroll { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    th { background: var(--chip); color: var(--ink); font-weight: 700; white-space: nowrap; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    footer { margin-top: 28px; font-size: 14px; color: var(--muted); text-align: center; }
+    footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin-bottom: 8px; }
+    .home-list { display: grid; gap: 12px; margin-top: 18px; }
+    .home-list a { display: block; text-decoration: none; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; color: var(--ink); font-weight: 700; font-size: 17px; }
+    .home-list a small { display: block; margin-top: 2px; font-weight: 500; font-size: 14px; color: var(--muted); }
+    .home-list a:hover { border-color: var(--accent); }
+    @media (max-width: 480px) {
+      body { font-size: 15px; padding-top: 18px; }
+      h1 { font-size: 24px; }
+      .card { padding: 18px 16px; border-radius: 16px; }
+      section h2 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="brand" href="./"><span>Q</span>MathQuest</a>
+    <header class="doc">
+      <h1>MathQuest 개인정보처리방침</h1>
+      <p class="dates">시행일 2026-10-19 · 최종 수정일 2026-10-19</p>
+    </header>
+    <div class="card intro">
+      <p>MathQuest(이하 &quot;본 앱&quot;)는 「개인정보 보호법」 등 관련 법령을 지키며, 이용자의 정보를 어떻게 다루는지 아래와 같이 안내합니다.</p>
+      <p class="callout"><strong>본 앱은 회원가입이 없는 로컬 전용 학습 앱입니다.</strong> 닉네임과 학습 기록은 모두 이용자의 기기 안에만 저장되고, 운영자의 서버로 전송되지 않습니다. 본 앱에는 정보를 서버로 보내는 기능이 없어 운영자는 이용자의 정보를 볼 수 없습니다.</p>
+    </div>
+    <nav class="card toc" aria-label="목차">
+      <h2>목차</h2>
+      <ol><li><a href="#s1">1. 기기에 저장되는 정보</a></li><li><a href="#s2">2. 정보의 이용 목적</a></li><li><a href="#s3">3. 보관 기간과 삭제 방법</a></li><li><a href="#s4">4. 앱이 사용하는 권한</a></li><li><a href="#s5">5. 외부 링크와 기기 백업</a></li><li><a href="#s6">6. 제3자 제공 · 처리 위탁 · 국외 이전</a></li><li><a href="#s7">7. 광고 · 분석 · 결제</a></li><li><a href="#s8">8. 아동의 개인정보</a></li><li><a href="#s9">9. 이용자의 권리</a></li><li><a href="#s10">10. 안전성 확보 조치</a></li><li><a href="#s11">11. 방침의 변경</a></li><li><a href="#s12">12. 문의처</a></li></ol>
+    </nav>
+    <section class="card" id="s1">
+      <h2>1. 기기에 저장되는 정보</h2>
+      <p>본 앱은 회원가입·로그인 절차가 없고, 이름·생년월일·전화번호·이메일처럼 이용자를 알아볼 수 있는 정보를 요구하지 않습니다. 서비스 제공을 위해 아래 정보만 <strong>기기 내부에</strong> 저장됩니다.</p>
+      <p><strong>이용자가 직접 입력하는 정보</strong></p>
+      <ul><li><strong>닉네임</strong> — 홈·프로필 화면의 인사말에 표시합니다. 실명일 필요가 없고 언제든지 바꿀 수 있습니다.</li><li><strong>학년</strong> — 초등 1학년 ~ 고등학생 중에서 고르며, 학년에 맞는 문제와 개념을 내는 데 사용합니다.</li><li><strong>아바타 · 학습 목표</strong> — 프로필 캐릭터와 학습 목표(재미있게 · 학교 성적 · 시험 대비) 선택값입니다.</li></ul>
+      <p><strong>앱을 사용하면서 만들어지는 정보</strong></p>
+      <ul><li><strong>학습 성과</strong> — 레벨, EXP, 연속 학습일, 푼 문제 수와 맞힌 문제 수, 배지, 리그 등급</li><li><strong>학습 기록</strong> — 날짜별 풀이 수·정답 수·획득 EXP·학습 시간, 단원별 진도, 개념 학습 완료 여부</li><li><strong>오답노트</strong> — 틀린 문제, 선택한 답, 정답, 해설</li><li><strong>미션 · 게임 기록</strong> — 오늘의 미션 진행도, 게임별 최고 점수·플레이 횟수·최고 콤보</li><li><strong>학습 설정</strong> — 맞춤 문제 수, 하루 문제·개념 미션 개수</li></ul>
+      <p>학습 성과·기록·오답노트·미션·게임 기록은 학년별로 따로 저장됩니다.</p>
+      <p><strong>저장 위치</strong> — 위 정보는 기기 내부 저장소(SQLite, 사용할 수 없는 기기에서는 AsyncStorage)에만 기록됩니다. 운영자의 서버에 보관되는 사본은 없으며, 앱 자체의 동기화·클라우드 저장 기능도 없습니다.</p>
+    </section>
+    <section class="card" id="s2">
+      <h2>2. 정보의 이용 목적</h2>
+      <div class="table-scroll"><table><thead><tr><th>항목</th><th>이용 목적</th></tr></thead><tbody><tr><td>닉네임 · 아바타</td><td>홈·프로필 화면 표시</td></tr><tr><td>학년</td><td>학년에 맞는 문제·개념 출제, 학년별 리그 구성</td></tr><tr><td>학습 성과 · 기록</td><td>레벨·EXP·연속 학습일·학습 리포트 표시, 맞춤 문제 추천</td></tr><tr><td>오답노트</td><td>틀린 문제 다시 풀기</td></tr><tr><td>미션 · 게임 기록</td><td>오늘의 미션과 게임 최고 기록 표시</td></tr><tr><td>학습 목표 · 설정</td><td>이용자가 고른 학습 환경 유지</td></tr></tbody></table></div>
+      <p>본 앱은 위 정보를 광고, 마케팅, 이용자 분석, 프로파일링에 이용하지 않습니다.</p>
+      <p><strong>랭킹(리그)</strong> — 랭킹에 함께 표시되는 다른 참가자는 앱이 기기 안에서 만든 <strong>가상 참가자</strong>입니다. 내 닉네임과 기록은 다른 이용자에게 공개되거나 전송되지 않습니다.</p>
+    </section>
+    <section class="card" id="s3">
+      <h2>3. 보관 기간과 삭제 방법</h2>
+      <p>모든 정보는 이용자가 직접 삭제하거나 앱을 제거할 때까지 기기에 남아 있고, 그때 바로 삭제됩니다. 운영자가 따로 보관하는 정보가 없으므로 별도의 파기 절차나 보관 기간이 없습니다.</p>
+      <ul><li><strong>전체 삭제</strong> — 프로필 → 관리 → <strong>모든 데이터 삭제</strong>. 모든 학년의 기록과 프로필이 한 번에 삭제됩니다.</li><li><strong>현재 학년만 삭제</strong> — 프로필 → 관리 → <strong>현재 학년 기록 초기화</strong>. 지금 학년의 레벨·EXP·미션·오답노트·학습 기록·게임 기록이 삭제되고 닉네임과 설정은 남습니다.</li><li><strong>앱 제거</strong> — 기기에서 본 앱을 삭제하면 저장된 모든 데이터가 함께 사라집니다.</li></ul>
+      <p>삭제한 데이터는 복구할 수 없습니다.</p>
+    </section>
+    <section class="card" id="s4">
+      <h2>4. 앱이 사용하는 권한</h2>
+      <div class="table-scroll"><table><thead><tr><th>권한</th><th>사용하는 기능</th><th>구분</th></tr></thead><tbody><tr><td>진동</td><td>정답·오답, 버튼을 누를 때 짧은 진동</td><td>필수</td></tr></tbody></table></div>
+      <p>본 앱은 <strong>인터넷 권한을 사용하지 않으며</strong>, 위치·연락처·사진·카메라·마이크·저장공간·전화·알림 권한도 요구하지 않습니다. 광고 식별자(AD_ID) 권한은 앱에서 제거되어 있습니다.</p>
+    </section>
+    <section class="card" id="s5">
+      <h2>5. 외부 링크와 기기 백업</h2>
+      <ul><li><strong>외부 링크</strong> — 개념 학습 화면의 출처(교육과정 자료) 링크와 앱 정보의 정책 페이지 링크는 <strong>기기의 외부 브라우저</strong>로 열립니다. 이때 본 앱의 정보는 전달되지 않으며, 연결된 사이트에는 그 사이트의 방침이 적용됩니다.</li><li><strong>기기 백업</strong> — 이용자가 Android 기기의 백업 기능을 켜 둔 경우, 운영체제가 앱 데이터를 <strong>이용자 본인의 Google 계정</strong>에 백업하고 새 기기에서 복원할 수 있습니다. 이 백업은 Google이 관리하며 운영자는 접근할 수 없습니다.</li></ul>
+    </section>
+    <section class="card" id="s6">
+      <h2>6. 제3자 제공 · 처리 위탁 · 국외 이전</h2>
+      <p>본 앱은 이용자의 정보를 제3자에게 제공하거나 외부 업체에 처리를 맡기지 않으며, 국외로 이전하지 않습니다. 운영자가 정보를 수집·보관하지 않으므로 제공·위탁할 정보 자체가 없습니다.</p>
+    </section>
+    <section class="card" id="s7">
+      <h2>7. 광고 · 분석 · 결제</h2>
+      <ul><li><strong>광고를 표시하지 않으며</strong>, 광고 식별자를 사용하지 않습니다.</li><li>이용 행태 분석 도구나 오류 수집 도구(Google Analytics · Firebase · Crashlytics 등)를 쓰지 않습니다.</li><li>쿠키를 비롯한 추적 기술을 쓰지 않습니다.</li><li>인앱 결제·구독이 없어 결제 정보를 다루지 않습니다.</li></ul>
+    </section>
+    <section class="card" id="s8">
+      <h2>8. 아동의 개인정보</h2>
+      <p>본 앱은 초·중·고등학생을 주된 이용 대상으로 하는 수학 학습 앱입니다. 회원가입을 받지 않고 개인을 알아볼 수 있는 정보를 수집하거나 전송하지 않으므로, 만 14세 미만 아동에 대해서도 법정대리인의 동의가 필요한 정보 수집이 일어나지 않습니다.</p>
+      <p>닉네임에는 실명이나 연락처 대신 별명을 쓰도록 보호자께서 지도해 주시기 바랍니다.</p>
+    </section>
+    <section class="card" id="s9">
+      <h2>9. 이용자의 권리</h2>
+      <p>이용자는 기기에 저장된 자신의 정보를 언제든지 직접 확인·수정·삭제할 수 있습니다.</p>
+      <ul><li><strong>열람</strong> — 프로필 화면(닉네임·학년·성과), 학습 리포트, 오답노트</li><li><strong>정정</strong> — 프로필 화면에서 닉네임·아바타·학년·학습 목표를 바로 변경</li><li><strong>삭제</strong> — 앱의 초기화·삭제 기능 또는 앱 제거로 즉시 처리</li></ul>
+      <p>운영자가 보관하는 정보가 없으므로 별도의 요청 절차 없이 이용자가 직접 처리할 수 있습니다.</p>
+    </section>
+    <section class="card" id="s10">
+      <h2>10. 안전성 확보 조치</h2>
+      <ul><li><strong>로컬 전용 설계</strong> — 모든 데이터가 기기 안에만 보관되어 외부로 유출될 경로가 없습니다.</li><li><strong>전송 기능 없음</strong> — 학습 정보를 서버로 보내는 기능이 앱에 없고, 인터넷 권한도 사용하지 않습니다.</li><li><strong>최소 수집</strong> — 서비스에 필요하지 않은 정보는 입력받지 않습니다.</li></ul>
+    </section>
+    <section class="card" id="s11">
+      <h2>11. 방침의 변경</h2>
+      <p>본 방침이 바뀌면 이 페이지와 앱 업데이트를 통해 알립니다. 이용자에게 불리한 중요한 변경은 시행 7일 전에, 그 밖의 변경은 시행과 함께 안내합니다.</p>
+    </section>
+    <section class="card" id="s12">
+      <h2>12. 문의처</h2>
+      <ul><li><strong>담당</strong> — MathQuest 운영자</li><li><strong>이메일</strong> — <a href="mailto:jjanghyoson@gmail.com">jjanghyoson@gmail.com</a></li><li><strong>응답 기간</strong> — 영업일 기준 3일 이내</li></ul>
+      <p>개인정보 침해에 대한 상담·신고는 아래 기관에서도 받을 수 있습니다.</p>
+      <ul class="links"><li><a href="https://privacy.kisa.or.kr" target="_blank" rel="noopener">개인정보침해 신고센터 (국번없이 118)</a></li><li><a href="https://www.kopico.go.kr" target="_blank" rel="noopener">개인정보 분쟁조정위원회 (1833-6972)</a></li></ul>
+    </section>
+    <footer>
+      <nav><a href="./">MathQuest 정책 안내</a><a href="./terms_of_service.html">이용약관</a><a href="./account_deletion.html">데이터 삭제 안내</a></nav>
+      문의 · MathQuest 운영자 <a href="mailto:jjanghyoson@gmail.com">jjanghyoson@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>

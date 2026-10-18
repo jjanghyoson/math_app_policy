@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>데이터 삭제 안내 — MathQuest</title>
+  <style>
+    :root {
+      --bg: #f3f5f1; --card: #ffffff; --ink: #1a1a2e; --ink-soft: #3f4454; --muted: #6b7080;
+      --line: #e3e6df; --accent: #0f8b7d; --accent-soft: #e3f4f1; --chip: #f6f7f4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12131c; --card: #1c1e2b; --ink: #f1f2f6; --ink-soft: #c9ccd6; --muted: #9a9fb0;
+        --line: #2c2f40; --accent: #4fd1bf; --accent-soft: #173a37; --chip: #24273a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; padding: 24px 16px 56px; background: var(--bg); color: var(--ink-soft);
+      font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", Roboto, sans-serif;
+      font-size: 16px; line-height: 1.75; word-break: keep-all; overflow-wrap: break-word;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    .brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; color: var(--accent); text-decoration: none; font-size: 15px; }
+    .brand span { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 9px; background: var(--accent); color: #fff; font-size: 15px; }
+    header.doc { margin: 18px 0 20px; }
+    h1 { margin: 0 0 6px; font-size: 28px; line-height: 1.3; color: var(--ink); letter-spacing: -0.02em; }
+    .dates { margin: 0; font-size: 14px; color: var(--muted); }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px 22px; margin-top: 14px; }
+    .intro p { margin: 0 0 12px; }
+    .intro p:last-child { margin-bottom: 0; }
+    .callout { background: var(--accent-soft); border-left: 4px solid var(--accent); border-radius: 10px; padding: 14px 16px; color: var(--ink); }
+    nav.toc h2 { margin: 0 0 8px; font-size: 15px; color: var(--muted); }
+    nav.toc ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 2px; }
+    nav.toc a { display: block; padding: 3px 10px; border-radius: 8px; color: var(--ink); text-decoration: none; font-size: 15px; line-height: 1.6; }
+    nav.toc a:hover { background: var(--chip); }
+    section h2 { margin: 0 0 10px; font-size: 20px; line-height: 1.4; color: var(--ink); scroll-margin-top: 16px; }
+    section p { margin: 10px 0; }
+    section > :last-child { margin-bottom: 0; }
+    strong { color: var(--ink); font-weight: 700; }
+    ul { margin: 10px 0; padding-left: 20px; }
+    li { margin: 6px 0; }
+    li::marker { color: var(--accent); }
+    ul.links { list-style: none; padding: 0; display: grid; gap: 8px; }
+    ul.links a { display: block; padding: 10px 14px; border-radius: 10px; background: var(--chip); }
+    .table-scroll { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    th { background: var(--chip); color: var(--ink); font-weight: 700; white-space: nowrap; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    footer { margin-top: 28px; font-size: 14px; color: var(--muted); text-align: center; }
+    footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin-bottom: 8px; }
+    .home-list { display: grid; gap: 12px; margin-top: 18px; }
+    .home-list a { display: block; text-decoration: none; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; color: var(--ink); font-weight: 700; font-size: 17px; }
+    .home-list a small { display: block; margin-top: 2px; font-weight: 500; font-size: 14px; color: var(--muted); }
+    .home-list a:hover { border-color: var(--accent); }
+    @media (max-width: 480px) {
+      body { font-size: 15px; padding-top: 18px; }
+      h1 { font-size: 24px; }
+      .card { padding: 18px 16px; border-radius: 16px; }
+      section h2 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="brand" href="./"><span>Q</span>MathQuest</a>
+    <header class="doc">
+      <h1>데이터 삭제 안내</h1>
+      <p class="dates">시행일 2026-10-19 · 최종 수정일 2026-10-19</p>
+    </header>
+    <div class="card intro">
+      <p class="callout">MathQuest에는 <strong>회원가입·계정이 없습니다.</strong> 모든 데이터는 이용자의 기기에만 저장되므로, 아래 방법으로 이용자가 직접 바로 삭제할 수 있습니다. 운영자에게 따로 요청할 필요가 없습니다.</p>
+    </div>
+    <nav class="card toc" aria-label="목차">
+      <h2>목차</h2>
+      <ol><li><a href="#s1">방법 1. 모든 데이터 삭제 (권장)</a></li><li><a href="#s2">방법 2. 현재 학년 기록만 삭제</a></li><li><a href="#s3">방법 3. 앱 제거</a></li><li><a href="#s4">삭제되는 데이터</a></li><li><a href="#s5">보관 기간</a></li><li><a href="#s6">문의</a></li></ol>
+    </nav>
+    <section class="card" id="s1">
+      <h2>방법 1. 모든 데이터 삭제 (권장)</h2>
+      <ul><li>앱을 열고 아래쪽 <strong>프로필</strong> 탭으로 이동합니다.</li><li><strong>관리</strong> 항목에서 <strong>모든 데이터 삭제</strong>를 누릅니다.</li><li><strong>전부 삭제</strong>를 눌러 확인합니다. 처음 시작 화면으로 돌아갑니다.</li></ul>
+    </section>
+    <section class="card" id="s2">
+      <h2>방법 2. 현재 학년 기록만 삭제</h2>
+      <ul><li><strong>프로필</strong> 탭 → <strong>관리</strong> → <strong>현재 학년 기록 초기화</strong>를 누릅니다.</li><li>지금 선택한 학년의 기록만 지워지고 닉네임·아바타·설정과 다른 학년의 기록은 남습니다.</li></ul>
+    </section>
+    <section class="card" id="s3">
+      <h2>방법 3. 앱 제거</h2>
+      <p>기기 설정 또는 Play 스토어에서 본 앱을 제거하면 기기에 저장된 모든 데이터가 함께 삭제됩니다.</p>
+    </section>
+    <section class="card" id="s4">
+      <h2>삭제되는 데이터</h2>
+      <div class="table-scroll"><table><thead><tr><th>데이터</th><th>모든 데이터 삭제</th><th>현재 학년 초기화</th></tr></thead><tbody><tr><td>닉네임 · 아바타 · 학년 · 학습 목표</td><td>삭제</td><td>유지</td></tr><tr><td>학습 설정</td><td>삭제</td><td>유지</td></tr><tr><td>레벨 · EXP · 연속 학습일 · 배지</td><td>삭제</td><td>해당 학년 삭제</td></tr><tr><td>학습 기록 · 단원별 진도</td><td>삭제</td><td>해당 학년 삭제</td></tr><tr><td>오답노트 · 오늘의 미션 · 게임 기록</td><td>삭제</td><td>해당 학년 삭제</td></tr></tbody></table></div>
+    </section>
+    <section class="card" id="s5">
+      <h2>보관 기간</h2>
+      <p>운영자의 서버에 보관되는 데이터가 없으므로, 삭제하는 즉시 영구 삭제되며 별도의 보관 기간이 없습니다. 삭제한 데이터는 복구할 수 없습니다. 기기 백업 기능으로 Google 계정에 백업된 사본은 기기의 Google 백업 설정에서 관리할 수 있습니다.</p>
+    </section>
+    <section class="card" id="s6">
+      <h2>문의</h2>
+      <ul><li><strong>담당</strong> — MathQuest 운영자</li><li><strong>이메일</strong> — <a href="mailto:jjanghyoson@gmail.com">jjanghyoson@gmail.com</a></li><li><strong>응답 기간</strong> — 영업일 기준 3일 이내</li></ul>
+    </section>
+    <footer>
+      <nav><a href="./">MathQuest 정책 안내</a><a href="./privacy_policy.html">개인정보처리방침</a><a href="./terms_of_service.html">이용약관</a></nav>
+      문의 · MathQuest 운영자 <a href="mailto:jjanghyoson@gmail.com">jjanghyoson@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
