@@ -10,7 +10,7 @@ MathQuest 앱의 공개 정책 문서를 호스팅하는 저장소입니다 (Git
 - 🗑️ [데이터 삭제 안내](https://jjanghyoson.github.io/math_app_policy/account_deletion.html)
 
 Play Console 의 개인정보처리방침·데이터 삭제 URL 로 위 주소를 씁니다.
-앱의 프로필 → 앱 정보 화면에서도 같은 내용을 보여 주고 "웹 페이지로 보기"로 이 페이지를 엽니다.
+앱의 나 탭 → 앱 정보 화면에서도 같은 내용을 보여 주고 "웹 페이지로 보기"로 이 페이지를 엽니다.
 **파일명을 바꾸면 앱과 Play Console 의 링크가 깨집니다.**
 
 ## 문서를 고칠 때
