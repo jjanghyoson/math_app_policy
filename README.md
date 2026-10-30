@@ -1,6 +1,6 @@
 # math_app_policy
 
-MathQuest 앱의 공개 정책 문서를 호스팅하는 저장소입니다 (GitHub Pages).
+놀자수학(MathQuest) 앱의 공개 정책 문서를 호스팅하는 저장소입니다 (GitHub Pages).
 
 ## 페이지
 
@@ -37,4 +37,4 @@ npm run policy:build          # → ../math_policy/*.html 재생성
 
 ## 문의
 
-MathQuest 운영자 · jjanghyoson@gmail.com
+놀자수학 운영자 · jjanghyoson@gmail.com
