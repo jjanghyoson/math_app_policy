@@ -1,6 +1,6 @@
 # math_app_policy
 
-놀자수학(MathQuest) 앱의 공개 정책 문서를 호스팅하는 저장소입니다 (GitHub Pages).
+놀자수학 앱의 공개 정책 문서를 호스팅하는 저장소입니다 (GitHub Pages).
 
 ## 페이지
 
